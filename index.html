@@ -19,6 +19,7 @@
           <label class="col-form-label" for="inputDefault">ISBN:</label> <!--quaggaJSでバーコードから読み取ったISBNがここに入力される-->
           <input type="text" name="isbn" id="ISBN" class="form-control"><br>
           <button onclick="GetData();" class="btn btn-primary">データ取得</button><br>
+          <hr>
           <form method="post" name="form" target="dummy" action="">
             <fieldset>
               <img src="" id="imagePlace"><br>
@@ -34,6 +35,10 @@
               <input type="text" name="publishedDate" id="publishedDate" class="form-control"><br>
               <label class="col-form-label" for="inputDefault">ページ数</label>
               <input type="text" name="pageCount" id="pageCount" class="form-control"><br>
+              <label class="col-form-label" for="inputDefault">Notionキー</label>
+              <input type="text" name="notionKey" id="notionKey" class="form-control" required><br>
+              <label class="col-form-label" for="inputDefault">データベースID</label>
+              <input type="text" name="databaseID" id="databaseID" class="form-control" required><br>
               <button type="submit" class="btn btn-primary">Notionに送信</button><br>
             </fieldset>
           </form>
